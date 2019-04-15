@@ -18,3 +18,11 @@ This repository contains the total of 12 parts, each broken out into their respe
 - Create multiple journal entries
 - Create javascript array to contain additional journal entries
 - Push journal entries into array
+
+### Part 3
+
+- Define journal entry objects inside journal entries array
+- Take raw data structures and create HTML representations so they can be added to the DOM
+- Write function that builds journal entry HTML string template
+- Create new element in index.html that will be container for all journal entries
+- Write a function to iterate array of journal entries and add them to the DOM

@@ -2,3 +2,9 @@ fieldset {
   display: flex;
   flex-direction: column;
 }
+
+.entry {
+  margin: 1em;
+  padding: 1em;
+  border: 1px solid black;
+}
