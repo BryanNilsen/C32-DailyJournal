@@ -26,3 +26,8 @@ This repository contains the total of 12 parts, each broken out into their respe
 - Write function that builds journal entry HTML string template
 - Create new element in index.html that will be container for all journal entries
 - Write a function to iterate array of journal entries and add them to the DOM
+
+### Part 4
+
+- Remove array of journal entries and transplant to entries.json file
+- refactor code to include fetch call to JSON file
