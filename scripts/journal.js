@@ -1,30 +1,17 @@
-// add journal entry objects to array
-let journalEntries = [
-  {
-    date: "04/08/2019",
-    concept: "javascript",
-    entry: "added my first journal entry",
-    mood: "happy"
-  },
-  {
-    date: "04/09/2019",
-    concept: "javascript",
-    entry: "added my second journal entry",
-    mood: "happy"
-  },
-  {
-    date: "04/10/2019",
-    concept: "javascript",
-    entry: "added my third journal entry",
-    mood: "happy"
-  }
-];
+// learning objective in this chapter is to set up JSON Server to store data for daily journal entries, query data from the API, and then use your knowledge of Promises (remember, fetch is a fancy Promise) and then() to render the entries to the DOM.
 
-// Journal Entries in the DOM
-// The last step in this chapter is to take your raw data structures, and create HTML representations of them so they can be added to the DOM.
+// Create a new directory in your project named api, and create a new file in that directory named entries.json.
 
-// Journal Entry Component Function
-// You've worked on exercises in which you wrote functions that returned HTML components. Now write a function that builds a journal entry HTML string template.
+// Next step is to remove the array of entries that you have in journal.js, and transplant it to api/entries.json as a JSON object.
+
+// Refactor: At this point, the journalEntries array should be completely removed from your JavaScript. You are now going to get the data from your API server.
+
+fetch("http://localhost:3000/entries") // Fetch from the API
+  .then(response => response.json()) // Parse as JSON
+  .then(entries => {
+    // render the journal entries to the DOM
+    renderJournalEntries(entries);
+  });
 
 const makeJournalEntryComponent = journalEntry => {
   // Create HTML structure for a journal entry
@@ -48,6 +35,3 @@ const renderJournalEntries = journalEntries => {
     entriesContainer.innerHTML += makeJournalEntryComponent(journalEntries[i]);
   }
 };
-
-// Invoke the render function
-renderJournalEntries(journalEntries);
