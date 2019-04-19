@@ -31,3 +31,9 @@ This repository contains the total of 12 parts, each broken out into their respe
 
 - Remove array of journal entries and transplant to entries.json file
 - refactor code to include fetch call to JSON file
+
+### Part 5
+
+- Modularize code by creating 3 additional .js files
+- Refactor code to use each module as objects with methods
+- Write code in journal.js to use objects with methods to get the data
