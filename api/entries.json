@@ -17,6 +17,12 @@
       "concept": "javascript",
       "entry": "added my third journal entry",
       "mood": "happy"
+    },
+    {
+      "date": "04/18/2019",
+      "concept": "javascript",
+      "entry": "added my fourth journal entry",
+      "mood": "happy"
     }
   ]
 }
