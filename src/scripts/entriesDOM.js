@@ -4,7 +4,9 @@ const addToDom = {
     let entriesContainer = document.querySelector(".entryLog");
     // loop through all entries in journalEntries array
     for (let i = 0; i < journalEntries.length; i++) {
-      entriesContainer.innerHTML += me.build(journalEntries[i]);
+      entriesContainer.innerHTML += makeJournalEntryComponent.build(
+        journalEntries[i]
+      );
     }
   }
 };
