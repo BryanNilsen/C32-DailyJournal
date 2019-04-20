@@ -9,7 +9,6 @@ const API = {
     );
   },
   postJournalEntry(journalEntry) {
-    console.log("YOU POSTED", journalEntry);
     return fetch("http://localhost:3000/entries", {
       // Replace "url" with your API's URL
       method: "POST",
