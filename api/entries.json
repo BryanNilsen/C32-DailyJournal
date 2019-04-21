@@ -27,41 +27,6 @@
       "entry": "added my fourth journal entry",
       "mood": "happy",
       "id": 4
-    },
-    {
-      "date": "2019-04-20",
-      "concept": "",
-      "entry": "",
-      "mood": "happy",
-      "id": 5
-    },
-    {
-      "date": "2019-04-20",
-      "concept": "validation",
-      "entry": "test3",
-      "mood": "sad",
-      "id": 6
-    },
-    {
-      "date": "2019-04-20",
-      "concept": "validation",
-      "entry": "test4",
-      "mood": "sad",
-      "id": 7
-    },
-    {
-      "date": "2019-04-20",
-      "concept": "2",
-      "entry": "we",
-      "mood": "happy",
-      "id": 8
-    },
-    {
-      "date": "2019-04-20",
-      "concept": "javascript grunt",
-      "entry": "we",
-      "mood": "happy",
-      "id": 9
     }
   ]
 }

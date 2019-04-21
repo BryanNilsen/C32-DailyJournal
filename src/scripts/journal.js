@@ -37,14 +37,10 @@ function buildJournalDataFromInput() {
   API.postJournalEntry(newEntry);
 }
 
-const inputEntry = document.querySelector("#journalEntry");
+let inputEntry = document.querySelector("#journalEntry");
 
 // FORM VALIDATION
 function checkForm(form) {
-  let charErrors =
-    " input contains invalid characters." +
-    "\n" +
-    "please limit to a-z 0-9 (){};:";
   // validation fails if the input is blank
   if (form.journalConcept.value == "") {
     alert("Error: Please fill out the Concept field");
@@ -52,11 +48,17 @@ function checkForm(form) {
     inputEntry.classList.add("alert");
     return false;
   }
-  // regular expression to match only alphanumeric characters and spaces
-  var re = /^[A-Za-z0-9' {}:;()-]*$/;
+
   // validation fails if the input doesn't match our regular expression
   if (!re.test(form.journalConcept.value)) {
     alert("Concept" + charErrors);
+    form.journalConcept.focus();
+    inputEntry.classList.add("alert");
+    return false;
+  }
+
+  if (!swearReg.test(form.journalConcept.value)) {
+    alert("Concept" + swearErrors);
     form.journalConcept.focus();
     inputEntry.classList.add("alert");
     return false;
