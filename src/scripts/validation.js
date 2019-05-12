@@ -1,11 +1,11 @@
 // CHARACTER VALIDATION - (whitelist acceptable characters)
 // regular expression to match only alphanumeric characters, spaces, and {}:;()-
-var charRegex = /^[A-Za-z0-9' {}:;()-]*$/;
+var charRegex = /^[A-Za-z0-9' .,{}:;()-]*$/;
 // ALERT MESSAGE on character fail
 let charErrors =
   " input contains invalid characters." +
   "\n" +
-  "please limit to a-z 0-9 (){};:";
+  "please limit to a-z 0-9 .,(){};:";
 
 // PROFANITY FILTER -  list profane words in array
 const swearWords = [

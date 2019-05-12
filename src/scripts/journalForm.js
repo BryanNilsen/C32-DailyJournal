@@ -35,9 +35,13 @@ function buildJournalForm() {
     id: "journalConcept",
     type: "text",
     name: "journalConcept",
-    maxlength: "30", // TODO still needs alert when max chars reached
+    maxLength: "30",
     required: true
   });
+  // check maxLength
+  journalConceptInput.addEventListener("keyup", () =>
+    maxLengthCheck(journalConceptInput)
+  );
 
   // Journal Entry label and input
   const journalEntryLabel = document.createElement("label");
@@ -105,5 +109,14 @@ buildJournalForm();
 function setAttributes(el, attrs) {
   for (var key in attrs) {
     el.setAttribute(key, attrs[key]);
+  }
+}
+
+// check character limit on form input
+function maxLengthCheck(input) {
+  if (input.value.length == input.maxLength) {
+    alert("full");
+  } else if (input.value.length == input.maxLength - 5) {
+    alert("you have 5 characters left");
   }
 }
