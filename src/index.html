@@ -13,37 +13,9 @@
     <h1>Daily Journal</h1>
 
     <!-- journal form component -->
-    <form id="journalForm" onsubmit="return checkForm(this)">
-      <fieldset>
-        <label for="journalDate">Date of Entry</label>
-        <input type="date" name="journalDate" id="journalDate" required />
-      </fieldset>
-      <fieldset>
-        <label for="journalConcept">
-          Concepts Covered
-        </label>
-        <input type="text" name="journalConcept" id="journalConcept" required />
-      </fieldset>
-      <fieldset>
-        <label for="journalEntry">
-          Journal Entry
-        </label>
-        <textarea
-          rows="4"
-          cols="50"
-          name="journalEntry"
-          id="journalEntry"
-          required
-        ></textarea>
-      </fieldset>
-      <fieldset>
-        <label for="journalMood">Mood for the Day</label>
-        <select name="journalMood" id="journalMood">
-          <option value="happy">happy</option>
-          <option value="sad">sad</option>
-          <option value="frustrated">frustrated</option>
-        </select>
-      </fieldset>
+    <section id="inputForm"></section>
+
+    <form id="htmlJournalForm" onsubmit="return checkForm(this)">
       <input
         type="submit"
         id="submit-btn"
@@ -59,6 +31,7 @@
     </article>
 
     <!-- javascript files -->
+    <script src="scripts/journalForm.js"></script>
     <script src="scripts/data.js"></script>
     <script src="scripts/entryComponent.js"></script>
     <script src="scripts/entriesDOM.js"></script>

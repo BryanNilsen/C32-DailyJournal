@@ -1,7 +1,3 @@
-// set default date in date picker to today's date
-let todaysDate = new Date().toISOString().split("T")[0];
-document.querySelector("#journalDate").setAttribute("value", todaysDate);
-
 // show entries button - click to see journal entries
 const showEntriesBtn = document.querySelector("#showEntries");
 showEntriesBtn.addEventListener("click", () => {
