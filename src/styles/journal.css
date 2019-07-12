@@ -1,3 +1,7 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 fieldset {
   display: flex;
   flex-direction: column;
@@ -7,4 +11,28 @@ fieldset {
   margin: 1em;
   padding: 1em;
   border: 1px solid black;
+}
+
+input:invalid,
+textarea:invalid {
+  border: 1px solid red;
+  background: rgb(223, 223, 223)
+}
+
+.alert {
+  border: 1px solid red;
+}
+
+.journal_submit_btn {
+  background: gray;
+  color: white;
+}
+
+.btn_disabled {
+  background: red;
+  opacity: .3;
+}
+
+.btn_enabled {
+  background: green;
 }

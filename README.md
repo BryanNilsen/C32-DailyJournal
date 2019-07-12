@@ -37,3 +37,10 @@ This repository contains the total of 12 parts, each broken out into their respe
 - Modularize code by creating 3 additional .js files
 - Refactor code to use each module as objects with methods
 - Write code in journal.js to use objects with methods to get the data
+
+### Part 6
+
+- Event listener on submit
+- Journal entry factory function
+- Use fetch to post entry to database
+- Add form input validation to check characters and profanity
